@@ -1,34 +1,65 @@
 body {
     margin: 0;
+    background-color: cornflowerblue;
 }
 
 .wrap {
-    margin: 0 auto;
+    margin: auto;
     width: 90vw;
     height: 1300px;
     display: flex;
     flex-wrap: wrap;
+    /*justify-content: flex-end;*/
 }
 
 .color {
-    background-color: silver;
+    background-color: #fff;
     color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 60px;
-    border: solid 10px black;
+    border: solid 5px black;
     box-sizing: border-box;
+}
+
+.box {
+    background-color: #3c4044;
 }
 
 .first {
     height: 10%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+}
+
+.first_block {
+    height: 80%;
+    width: 20%;
+
 }
 
 .second {
     width: 20%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1%;
+    padding: 1% 0;
+}
+
+.second_block {
+    width: 80%;
+    height: 3%;
+}
+
+.second_different {
+    /*background-color: white;*/
+    height: 0;
 }
 
 .small_container {
@@ -43,31 +74,262 @@ body {
     width: 100%;
 }
 
+.third_block {
+    height: 80%;
+    width: 95%;
+
+}
+
 .fourth {
     height: 10%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.fourth_block {
+    height: 80%;
+    width: 20%;
 }
 
 .fifth {
     height: 60%;
     width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2%;
+    padding: 2% 0;
+    overflow: scroll;
+
+}
+
+.fifth_block {
+    height: 14%;
+    width: 40%;
 }
 
 .sixth {
     height: 60%;
     width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 2% 0;
+    gap: 2%;
+}
+
+.sixth_block {
+    height: 8%;
+    width: 80%;
 }
 
 .seventh {
     height: 10%;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    padding: 2% 0;
+}
+
+.seventh_block {
+    height: 40%;
+    width: 45%;
+}
+
+.seventh_different {
+    width: 15%;
 }
 
 
-@media screen and (max-width: 1200px) and (min-width: 700px) {
+@media screen and (max-width: 1400px) and (min-width: 900px) {
+    .wrap {
+        width: 80vw;
+        margin-left: 20%;
+    }
+
+    .first {
+
+    }
+
+    .first_block {
+        width: 30%;
+    }
+
+    .second {
+        position: relative;
+        /*margin-right: 30%;*/
+        height: 30%;
+        width: 20vw;
+        top: -10%;
+        left: -20vw;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        gap: 3%;
+        border: 5px dotted black;
+    }
+
+    .second_block {
+        height: 10%;
+    }
+
+    .second_different {
+        background-color: #3c4044;
+        margin-bottom: 15%;
+    }
+
+    .small_container {
+        width: 100%;
+        height: 90%;
+        position: relative;
+        top: -30%;
+    }
+
+    .third {
+        height: 15%;
+        width: 100%;
+    }
+
+    .fourth {
+        height: 25%;
+        width: 100%;
+
+    }
+
+    .fourth_block {
+        width: 45%;
+        height: 40%;
+    }
+
+    .fifth {
+        height: 35%;
+        width: 100%;
+        gap: 3%;
+    }
+    .fifth_block{
+        height: 30%;
+    }
+
+    .sixth {
+        height: 15%;
+        width: 100%;
+        padding: 1% 0 0;
+    }
+    .sixth_block{
+        height: 30%;
+        width: 40%;
+    }
+    .sixth_different{
+        height: 94%;
+    }
+    .seventh {
+        height: 10%;
+        width: 100%;
+    }
+    .seventh_different{
+        width: 20%;
+    }
+}
 
 
-    .second{
-        position: absolute;
+
+@media screen and (max-width: 900px) and (min-width: 100px) {
+    .wrap {
+        width: 80vw;
+        margin-left: 20%;
+    }
+
+    .first {
+        align-items: flex-end;
+        padding-bottom: 2%;
+    }
+
+    .first_block {
+        width: 45%;
+        height: 30%;
+    }
+
+    .second {
+        position: relative;
+        /*margin-right: 30%;*/
+        height: 23%;
+        width: 20vw;
+        top: -10%;
+        left: -20vw;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        gap: 3%;
+        border: 5px dotted black;
+    }
+
+    .second_block {
+        height: 10%;
+    }
+
+    .second_different {
+        background-color: #3c4044;
+        margin-bottom: 15%;
+    }
+
+    .small_container {
+        width: 100%;
+        height: 90%;
+        position: relative;
+        top: -23%;
+    }
+
+    .third {
+        height: 10%;
+        width: 100%;
+    }
+
+    .fourth {
+        height: 15%;
+        width: 100%;
+
+    }
+
+    .fourth_block {
+        width: 45%;
+        height: 40%;
+    }
+
+    .fifth {
+        height: 32.5%;
+        width: 100%;
+        gap: 3%;
+    }
+    .fifth_block{
+        height: 17%;
+        width: 90%;
+    }
+
+    .sixth {
+        height: 32.5%;
+        width: 100%;
+        padding: 2% 0 0 ;
+    }
+    .sixth_block{
+        height: 15%;
+        width: 90%;
+    }
+    .sixth_different{
+        height: 45%;
+        width: 90%;
+    }
+    .seventh {
+        height: 10%;
+        width: 100%;
+    }
+    .seventh_different{
+        width: 45%;
     }
 }
